@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', 'BannersController@index')->name('banners.index');
 Route::get('/banners', 'BannersController@index')->name('banners.index');
 Route::get('/banners/details/{id}', 'BannersController@details')->name('banners.details');
 Route::get('/banners/add', 'BannersController@add')->name('banners.add');

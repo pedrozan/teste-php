@@ -10,5 +10,4 @@ class Banner extends Model
 
     //custom timestamps name
     const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'modified_at';
 }

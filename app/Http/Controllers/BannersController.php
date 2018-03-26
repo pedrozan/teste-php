@@ -40,6 +40,7 @@ class BannersController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
+        //handle image
         $image = $request->file('image');
         $input['imageName'] = time().'.'.$image->getClientOriginalExtension();
         $destinationPath = public_path('images');
@@ -48,7 +49,7 @@ class BannersController extends Controller
         //get banner data
         $bannerData = $request->all();
         unset($bannerData['image']);
-        $bannerData['imagePath'] = $input['imageName'];
+        $bannerData['imagePath'] = '/images/' . $input['imageName'];
 
         //insert banner data
         Banner::create($bannerData);

@@ -11,10 +11,10 @@
                 <div class="row">
                     <div class="col-lg-12 margin-tb">
                         <div class="pull-left">
-                            <h2>Banners List </h2>
+                            <h2>Banners </h2>
                         </div>
                         <div class="pull-right">
-                            <a class="btn btn-success" href="{{ route('banners.add') }}"> Add New</a>
+                            <a class="btn btn-success" href="{{ route('banners.add') }}"> Criar Novo</a>
                         </div>
                     </div>
                 </div>
@@ -23,10 +23,10 @@
                         <table class="table table-striped task-table">
                             <!-- Table Headings -->
                             <thead>
-                            <th width="25%">Name</th>
-                            <th width="40%">Path to file</th>
-                            <th width="15%">Created at</th>
-                            <th width="20%">Action</th>
+                            <th width="25%">Nome</th>
+                            <th width="40%">Arquivo</th>
+                            <th width="15%">Criado em</th>
+                            <th width="20%">Ação</th>
                             </thead>
 
                             <!-- Table Body -->
@@ -43,8 +43,8 @@
                                         <div>{{$banner->created_at}}</div>
                                     </td>
                                     <td>
-                                        <a href="{{ route('banners.details', $banner->id) }}" class="label label-success">Details</a>
-                                        <a href="{{ route('banners.edit', $banner->id) }}" class="label label-warning">Edit</a>
+                                        <a href="{{ route('banners.details', $banner->id) }}" class="label label-success">Detalhes</a>
+                                        <a href="{{ route('banners.edit', $banner->id) }}" class="label label-warning">Editar</a>
                                         <a href="{{ route('banners.delete', $banner->id) }}" class="label label-danger" onclick="return confirm('Are you sure to delete?')">Delete</a>
                                     </td>
                                 </tr>

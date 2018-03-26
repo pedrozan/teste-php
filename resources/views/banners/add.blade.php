@@ -31,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <input type="submit" class="btn btn-default" value="Add Banner" />
+                            <input type="submit" class="btn btn-default" value="Adicionar Banner" />
                         </div>
                     </div>
                 </form>
