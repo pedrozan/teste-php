@@ -1,27 +1,15 @@
-# Laravel PHP Framework
+# Teste de PHP para Fator Digital
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+**Descrição**: Desenvolva um pequeno CRUD de gerenciamentos de banners. O sistema deve permitir o cadastro/edição/filtro e exclusão dos registros.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+**Tecnologia**: A aplicação deve ser desenvolvida em cima de um framework PHP de sua preferência, porém sugeríamos/gostaríamos que fosse aplicado em cima do CakePHP ou Lavavel, frameworks mais comuns no dia a dia da empresa.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+**Avaliação**: Será avaliado tanto o funcionamento da aplicação, como as boas práticas de desenvolvimento, como organização de código, validações dos dados, e etc;
 
-## Official Documentation
+**Entrega**: Esse pequeno sistema deverá ser enviado para o recrutador em um repositório do GIT. O banco de dados pode ser enviado como anexo no e-mail, ou estar no GIT, ou ainda, apontado para um ambiente externo com acesso público (os dados de conexão devem ser enviados no corpo do e-mail). De preferencia, informe o tempo total que levou para realizar o teste. 
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+**Prazo**: 2 dias a partir do recebimento do e-mail.  
 
-## Contributing
+## Para Rodar
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+O sistema foi desenvolvido com um Docker container e usando Laravel 5.3. Para rodar basta usar o comando `docker-compose up`.
