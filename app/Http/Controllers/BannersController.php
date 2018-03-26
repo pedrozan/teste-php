@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use PhpParser\Node\Stmt\Echo_;
 use Session;
 
 class BannersController extends Controller
@@ -36,11 +37,18 @@ class BannersController extends Controller
         //validate banner data
         $this->validate($request, [
             'name' => 'required',
-            'imagePath' => 'required'
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+
+        $image = $request->file('image');
+        $input['imageName'] = time().'.'.$image->getClientOriginalExtension();
+        $destinationPath = public_path('images');
+        $image->move($destinationPath, $input['imageName']);
 
         //get banner data
         $bannerData = $request->all();
+        unset($bannerData['image']);
+        $bannerData['imagePath'] = $input['imageName'];
 
         //insert banner data
         Banner::create($bannerData);

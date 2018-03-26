@@ -15,18 +15,18 @@
                 Add a New Banner <a href="{{ route('banners.index') }}" class="label label-primary pull-right">Back</a>
             </div>
             <div class="panel-body">
-                <form action="{{ route('banners.insert') }}" method="POST" class="form-horizontal">
+                <form action="{{ route('banners.insert') }}" enctype="multipart/form-data" method="POST" class="form-horizontal">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >Title</label>
+                        <label class="control-label col-sm-2" >Nome</label>
                         <div class="col-sm-10">
-                            <input type="text" name="title" id="title" class="form-control">
+                            <input type="text" name="name" id="name" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-2" >Content</label>
+                        <label class="control-label col-sm-2" >Imagem</label>
                         <div class="col-sm-10">
-                            <textarea name="content" id="content" class="form-control"></textarea>
+                            <input type="file" id="image" name="image" multiple="multiple" accept="image/*" />
                         </div>
                     </div>
                     <div class="form-group">
